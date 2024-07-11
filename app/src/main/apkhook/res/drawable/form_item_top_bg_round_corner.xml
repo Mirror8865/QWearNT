@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/form_bg_common_margin" android:right="@dimen/form_bg_common_margin">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/qui_common_fill_light_secondary" />
+            <padding android:left="@dimen/form_bg_common_margin" android:right="@dimen/form_bg_common_margin" />
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" />
+        </shape>
+    </item>
+</layer-list>

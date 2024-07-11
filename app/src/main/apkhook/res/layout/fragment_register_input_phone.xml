@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatEditText android:textSize="12.0sp" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="center" android:id="@id/phone_num" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_marginLeft="26.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="26.0dip" android:layout_marginBottom="14.0dip" android:hint="@string/input_phone_num_tips" android:maxLength="11" android:inputType="phone" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.tencent.qqnt.watch.ui.componet.numkey.NumericKeyboardView android:id="@id/numeric_keyboard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="14.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/phone_num" />
+</androidx.constraintlayout.widget.ConstraintLayout>

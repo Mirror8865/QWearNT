@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rfw_layer_item_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.richframework.widget.matrix.RFWMatrixImageView android:layout_gravity="center" android:id="@id/rfw_layer_iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.tencent.richframework.widget.subscaleview.SubsamplingScaleImageView android:layout_gravity="center" android:id="@id/rfw_layer_iv_region" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/rfw_layer_iv_error" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" android:contentDescription="图片过期" />
+        <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:id="@id/rfw_layer_tv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/rfw_layer_loading_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+</FrameLayout>

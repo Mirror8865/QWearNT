@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mobileqq.quibadge.QUIBadgeDragLayout android:orientation="vertical" android:id="@id/drag_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/topbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/recycler_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlDragRate="0.75" app:srlEnableLoadMore="false" app:srlEnableOverScrollDrag="true" app:srlEnableRefresh="false" app:srlFooterHeight="2340.0dip">
+        <com.tencent.qqnt.chats.view.SkinnableRecycleView android:scrollbarThumbVertical="@drawable/qui_scrollbar" android:id="@id/chats_list" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <ViewStub android:id="@id/sk_view" android:layout="@layout/chat_sk_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="63.0dip" />
+    <com.tencent.qqnt.biz.lightbusiness.lightinteraction.view.LIAAnimView android:id="@id/chats_inter_action_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/third_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/recent_banner_guide_line" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mobileqq.quibadge.QUIBadgeDragLayout>

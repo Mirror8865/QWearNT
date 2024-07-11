@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/login_nav_graph" app:startDestination="@id/loginEntryPointFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_splash" android:name="com.tencent.qqnt.account.login.ui.LoginEntryPointFragment" android:id="@id/loginEntryPointFragment">
+        <action android:id="@id/action_splashFragment_to_login_with_state_fragment" app:destination="@id/login_with_state_fragment" app:launchSingleTop="true" app:popUpTo="@id/loginEntryPointFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_loginEntryPointFragment_to_kick_notify_fragment" app:destination="@id/kick_notify_fragment" app:popUpTo="@id/loginEntryPointFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_loginEntryPointFragment_to_qr_login_fragment" app:destination="@id/qr_login_fragment" app:popUpTo="@id/loginEntryPointFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_loginEntryPointFragment_to_qq_login_without_state" app:destination="@id/qq_login_without_state" app:popUpTo="@id/loginEntryPointFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="QrLoginFragment" android:name="com.tencent.qqnt.account.login.ui.QrLoginFragment" android:id="@id/qr_login_fragment">
+        <action android:id="@id/action_qr_login_fragment_to_registerInputPhoneFragment" app:destination="@id/registerInputPhoneFragment" />
+        <action android:id="@id/action_qr_login_fragment_to_registerSuccessFragment" app:destination="@id/registerSuccessFragment" />
+        <action android:id="@id/action_qr_login_fragment_to_registerLicenseFragment" app:destination="@id/registerLicenseFragment" />
+    </fragment>
+    <fragment android:label="LoginWithoutStatePage" android:name="com.tencent.qqnt.account.login.ui.LoginWithoutStatePage" android:id="@id/qq_login_without_state">
+        <action android:id="@id/action_qq_login_without_state_to_qr_login_fragment" app:destination="@id/qr_login_fragment" />
+    </fragment>
+    <fragment android:label="LoginWithStateFragment" android:name="com.tencent.qqnt.account.login.ui.LoginWithStateFragment" android:id="@id/login_with_state_fragment">
+        <action android:id="@id/action_login_with_state_fragment_to_qr_login_fragment" app:destination="@id/qr_login_fragment" />
+    </fragment>
+    <fragment android:label="KickNotifyFragment" android:name="com.tencent.qqnt.account.kick.ui.KickNotifyFragment" android:id="@id/kick_notify_fragment">
+        <action android:id="@id/action_kick_notify_fragment_to_splashFragment" app:popUpTo="@id/kick_notify_fragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_kick_notify_fragment_to_loginEntryPointFragment" app:destination="@id/loginEntryPointFragment" app:popUpTo="@id/kick_notify_fragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="RegisterInputPhoneFragment" android:name="com.tencent.qqnt.account.register.ui.RegisterInputPhoneFragment" android:id="@id/registerInputPhoneFragment">
+        <action android:id="@id/action_registerInputPhoneFragment_to_registerVerifySmsFragment" app:destination="@id/registerVerifySmsFragment" />
+    </fragment>
+    <fragment android:label="RegisterVerifySmsFragment" android:name="com.tencent.qqnt.account.register.ui.RegisterVerifySmsFragment" android:id="@id/registerVerifySmsFragment">
+        <action android:id="@id/action_registerVerifySmsFragment_to_registerSuccessFragment" app:destination="@id/registerSuccessFragment" />
+    </fragment>
+    <fragment android:label="RegisterSuccessFragment" android:name="com.tencent.qqnt.account.register.ui.RegisterSuccessFragment" android:id="@id/registerSuccessFragment" />
+    <fragment android:label="RegisterGatewayFragment" android:name="com.tencent.qqnt.account.register.ui.RegisterGatewayFragment" android:id="@id/registerByGatewayFragment">
+        <action android:id="@id/action_registerByGatewayFragment_to_registerVerifySmsFragment" app:destination="@id/registerVerifySmsFragment" app:popUpTo="@id/registerByGatewayFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_registerByGatewayFragment_to_registerInputPhoneFragment" app:destination="@id/registerInputPhoneFragment" app:popUpTo="@id/registerByGatewayFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_registerByGatewayFragment_to_registerSuccessFragment" app:destination="@id/registerSuccessFragment" app:popUpTo="@id/registerByGatewayFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_registerByGatewayFragment_to_registerVerifySmsFragment" app:destination="@id/registerVerifySmsFragment" app:popUpTo="@id/registerByGatewayFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="LoadingFragment" android:name="com.tencent.qqnt.watch.ui.componet.tips.LoadingFragment" android:id="@id/loadingFragment" />
+    <fragment android:label="TipFragment" android:name="com.tencent.qqnt.watch.ui.componet.tips.TipsFragment" android:id="@id/tipsFragment" />
+    <fragment android:label="RegisterLicenseFragment" android:name="com.tencent.qqnt.account.register.ui.RegisterLicenseFragment" android:id="@id/registerLicenseFragment">
+        <action android:id="@id/action_registerLicenseFragment_to_registerByGatewayFragment" app:destination="@id/registerByGatewayFragment" />
+    </fragment>
+    <fragment android:label="PermissionFragment" android:name="com.tencent.qqnt.watch.ui.componet.permission.PermissionRequestFragment" android:id="@id/permissionFragment" />
+    <fragment android:label="QrFragment" android:name="com.tencent.qqnt.watch.ui.componet.qr.QrFragment" android:id="@id/qrFragment" />
+</navigation>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.tencent.qqlite" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <queries>
+        <package android:name="com.hihonor.id"/>
+        <intent>
+            <action android:name="com.hihonor.id.HnOaIdService"/>
+        </intent>
+    </queries>
+    <application android:debuggable="true" android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/backup_rules" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.tencent.qqnt.watch.app.WatchApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/FullscreenTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:name="com.tencent.qqnt.watch.app.JumpActivity" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/SplashFullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mqq.intent.action.ACCOUNT_EXPIRED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mqq.intent.action.ACCOUNT_KICKED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.qqnt.watch.action.MAINACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.tencent.mobileqq.msf.service.MsfService" android:process=":MSF">
+            <intent-filter>
+                <action android:name="com.tencent.qphone.base.subservice"/>
+            </intent-filter>
+            <meta-data android:name="SERVICE_ID" android:value="mobileqq.service"/>
+            <meta-data android:name="SERVICE_NAME" android:value="MobileQQ Service"/>
+            <meta-data android:name="SERVICE_VERSION" android:value="1"/>
+        </service>
+        <receiver android:exported="false" android:name="com.tencent.qqnt.watch.app.HostNetConnInfoCenter" android:process=":MSF">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.rdm.report"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.msf.receiveofflinepush"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.msf.offlinepushclearall"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.msf.receiveofflinepushav"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.msf.offlinepushclearallav"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.msf.startmsf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="mqq.app.QQBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.mobileqq.broadcast.qq"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <provider android:authorities="com.tencent.qqlite.eipcmobileqq" android:enabled="true" android:exported="false" android:name="eipc.EIPCContentProvider"/>
+        <meta-data android:name="design_width_in_dp" android:value="160"/>
+        <meta-data android:name="TencentGeoLocationSDK" android:value="QQ2013,LWPAH-5CHEJ-Y6CR2-AQPLX-IV2JQ"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.tencent.qqlive.module.videoreport.scheme.SchemeRouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="txdt0and05wgze38p5ii"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.tencent.qqlite.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:configChanges="orientation" android:exported="false" android:launchMode="singleTask" android:name="com.tencent.qqnt.watch.mainframe.MainActivity" android:screenOrientation="portrait" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/FullscreenTheme"/>
+        <activity android:configChanges="orientation" android:exported="false" android:launchMode="singleTask" android:name="com.tencent.qqnt.watch.mainframe.UpdateActivity" android:screenOrientation="portrait" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/FullscreenTheme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.tencent.activitys.AcceptedCallActivity" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/MaterialFullscreenTheme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:keepScreenOn="true" android:launchMode="singleTask" android:name="com.tencent.activitys.BeInvitedActivity" android:screenOrientation="portrait" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/MaterialFullscreenTheme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.tencent.qqnt.demo_api.QQNTC2CWatchActivity" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/MaterialFullscreenTheme"/>
+        <activity android:name="com.tencent.qqnt.chats.biz.troophelper.TroopHelperActivity" android:screenOrientation="portrait" android:theme="@style/Theme.QQNT.Transparent"/>
+        <activity android:name="com.tencent.qqnt.chats.biz.miniaio.MiniAioActivity" android:screenOrientation="portrait" android:theme="@style/Theme.QQNT.Transparent"/>
+        <service android:name="com.tencent.qqnt.watch.baselib.pprocess.MainPluginProcessService"/>
+        <service android:name="com.tencent.qqnt.watch.baselib.pprocess.MsfPluginProcessService" android:process=":MSF"/>
+        <service android:name="com.tencent.qqnt.watch.baselib.pprocess.PrePluginProcessService" android:process=":P_OPT"/>
+        <service android:name="com.tencent.qqnt.watch.host.PreloadPluginService" android:process=":P_OPT"/>
+        <activity android:name="com.tencent.qqnt.watch.runtime.container.BeInvitedActivity" android:taskAffinity="com.tencent.qqnt.watch.main"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:launchMode="standard" android:name="com.tencent.qqnt.watch.runtime.container.PluginDefaultProxyActivity" android:screenOrientation="portrait" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/FullscreenTheme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.tencent.qqnt.watch.runtime.container.PluginDefaultProxySingleInsActivity" android:screenOrientation="portrait" android:taskAffinity="com.tencent.qqnt.watch.main" android:theme="@style/FullscreenTheme"/>
+        <service android:exported="false" android:name="com.tencent.qqnt.watch.host.WatchMsfHostService" android:process=":MSF">
+            <intent-filter>
+                <action android:name="com.tencent.qphone.base.subservice"/>
+            </intent-filter>
+            <meta-data android:name="SERVICE_ID" android:value="mobileqq.service"/>
+            <meta-data android:name="SERVICE_NAME" android:value="MobileQQ Service"/>
+            <meta-data android:name="SERVICE_VERSION" android:value="1"/>
+        </service>
+        <service android:exported="false" android:name="com.tencent.mobileqq.msf.service.PluginMsfService" android:process=":MSF">
+            <intent-filter>
+                <action android:name="com.tencent.qphone.base.subservice"/>
+            </intent-filter>
+            <meta-data android:name="SERVICE_ID" android:value="mobileqq.service"/>
+            <meta-data android:name="SERVICE_NAME" android:value="MobileQQ Service"/>
+            <meta-data android:name="SERVICE_VERSION" android:value="1"/>
+        </service>
+        <provider android:authorities="com.tencent.qqlite.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <activity android:name="com.tencent.aio.main.activity.ChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.mobileqq.qqnt.videoplay.VideoPlayDemoActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.tencent.qqnt.compress.demo.CompressDemoActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.tencent.biz.richframework.activity.CompatPublicActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.tencent.qqlite.rmonitor-installer" android:exported="false" android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"/>
+        <receiver android:exported="false" android:name="com.tencent.rmonitor.natmem.NatMemReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.rmonitor.natmem.USAGE_DUMP"/>
+                <action android:name="com.tencent.rmonitor.natmem.LEAK_DUMP"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.tencent.qqlite.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="me.jessyan.autosize.InitProvider"/>
+        <service android:exported="false" android:name="com.bytedance.boost_multidex.OptimizeService" android:process=":boost_multidex"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.tencent.qqlite.pandoraprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.tencent.qmethod.pandoraex.provider.PandoraExProvider" android:permission="com.tencent.qmethod.permission.pandoraex"/>
+        <uses-library android:name="com.huawei.camerakit.impl" android:required="false"/>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/splashFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_splash" android:name="com.tencent.qqnt.watch.mainframe.SplashFragment" android:id="@id/splashFragment">
+        <action android:id="@id/action_splashFragment_to_privacyLicenseFragment" app:destination="@id/privacyLicenseFragment" app:popUpTo="@id/splashFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="PrivacyLicenseFragment" android:name="com.tencent.qqnt.watch.mainframe.PrivacyLicenseFragment" android:id="@id/privacyLicenseFragment" />
+    <fragment android:label="PermissionFragment" android:name="com.tencent.qqnt.watch.ui.componet.permission.PermissionRequestFragment" android:id="@id/permissionFragment" />
+</navigation>

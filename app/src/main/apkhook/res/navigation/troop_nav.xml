@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/troop_nav" app:startDestination="@id/troopEntryFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="WatchTroopEnterFragment" android:name="com.tencent.qqnt.watch.troop.ui.WatchTroopEnterFragment" android:id="@id/troopEntryFragment">
+        <action android:id="@id/action_troopEntryFragment_to_troopSettingFragment" app:destination="@id/troopSettingFragment" app:popUpTo="@id/troopEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_troopEntryFragment_to_groupMemberFragment" app:destination="@id/groupMemberFragment" app:popUpTo="@id/troopEntryFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="TroopSettingFragment" android:name="com.tencent.qqnt.watch.troop.ui.setting.TroopSettingFragment" android:id="@id/troopSettingFragment" />
+    <fragment android:label="GroupMemberFragment" android:name="com.tencent.qqnt.watch.troop.ui.member.ui.GroupMemberFragment" android:id="@id/groupMemberFragment" />
+</navigation>

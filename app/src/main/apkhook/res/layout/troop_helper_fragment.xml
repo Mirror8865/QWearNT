@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mobileqq.quibadge.QUIBadgeDragLayout android:orientation="vertical" android:id="@id/drag_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/troop_title_tips" android:background="@drawable/common_list_item_background_theme_version2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_troop_tips" android:paddingStart="16.0dip" />
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlEnableLoadMore="false" app:srlEnablePureScrollMode="true">
+            <com.tencent.qqnt.chats.view.SkinnableRecycleView android:id="@id/chats_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</com.tencent.mobileqq.quibadge.QUIBadgeDragLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/feed_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:text="3" android:drawableLeft="@drawable/icon_feed_common" android:drawablePadding="2.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/feed_content_container" />
+    <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/feed_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.5dip" android:text="3" android:drawableLeft="@drawable/icon_feed_like_disable" android:drawablePadding="2.0dip" app:layout_constraintLeft_toRightOf="@id/feed_commit" app:layout_constraintTop_toBottomOf="@id/feed_content_container" />
+    <TextView android:textSize="9.0sp" android:gravity="center" android:id="@id/feed_shared" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.5dip" android:text="3" android:drawableLeft="@drawable/icon_feed_forward" android:drawablePadding="2.0dip" app:layout_constraintLeft_toRightOf="@id/feed_like" app:layout_constraintTop_toBottomOf="@id/feed_content_container" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/feed_content_ry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" app:layout_constraintTop_toBottomOf="@id/feed_commit" />
+</merge>

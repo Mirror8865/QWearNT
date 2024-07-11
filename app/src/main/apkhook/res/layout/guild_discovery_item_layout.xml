@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chat_content" android:background="@drawable/qui_list_item_normal_bgc" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/recent_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/diy_msg_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/avatar_container" android:layout_width="@dimen/recent_avatar_container_size" android:layout_height="@dimen/recent_avatar_container_size" android:layout_marginLeft="7.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <FrameLayout android:layout_width="@dimen/item_avatar_wrapper_size" android:layout_height="@dimen/item_avatar_wrapper_size" android:layout_centerInParent="true">
+            <com.tencent.qqnt.chats.view.widget.RoundFrameLayout android:layout_gravity="center" android:id="@id/avatar_shadow_layout" android:background="@color/transparent" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layerType="hardware">
+            <com.tencent.qqnt.chats.view.widget.RecentAvatarViewWrapper android:layout_gravity="center" android:id="@id/avatar_layout" android:focusable="true" android:clickable="true" android:layout_width="@dimen/item_avatar_wrapper_size" android:layout_height="@dimen/item_avatar_wrapper_size" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

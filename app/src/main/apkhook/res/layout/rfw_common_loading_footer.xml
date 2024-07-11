@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lLayout_content" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ProgressBar android:id="@id/pb_loading" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="10.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/rfw_common_loading" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffa3a3a3" android:gravity="center" android:id="@id/tv_tips" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_custom_view_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

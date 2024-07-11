@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/qav_c2c_chat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.av.opengl.ui.GLRootView android:id="@id/av_video_glview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/background_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_blue" android:scaleType="centerCrop" />
+    <com.tencent.qqnt.base.widget.RoundRectImageView android:id="@id/avatar" android:layout_width="56.0dip" android:layout_height="56.0dip" app:layout_constraintBottom_toTopOf="@id/nickname" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/qui_common_text_allwhite_primary" android:gravity="center" android:id="@id/nickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="nickname" app:layout_constraintBottom_toTopOf="@id/time_tick" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/avatar" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/qui_common_text_allwhite_primary" android:gravity="center" android:id="@id/time_tick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="等待对方接听..." app:layout_constraintBottom_toTopOf="@id/qav_enter_room_panel" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nickname" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/qav_enter_room_panel" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout android:id="@id/qav_fl_voice_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/qav_btn_micon" android:layout_width="24.0dip" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/qav_fl_hangup_container" android:background="@drawable/qav_shape_hangup_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/qav_btn_hangup" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/qav_icon_hang_up" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/qav_fl_camera_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/qav_btn_camera" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

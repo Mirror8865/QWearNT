@@ -1,0 +1,6 @@
+version: 1  # 当前配置版本
+injectInfo: # 注入信息数组
+  - classname: "com.tencent.mobileqq.soso.location.inject.LbsGdtUtils" # 生效的类,用作校验和便于阅读
+    field: "sILbsGdtUtilsProcessorClassList" # 生效的field,用作校验和便于阅读
+    classList: # 需要注入的Class
+      - "com.tencent.mobileqq.app.soso.LbsGdtProcessorProxy"      # 获取图灵顿 oaid。

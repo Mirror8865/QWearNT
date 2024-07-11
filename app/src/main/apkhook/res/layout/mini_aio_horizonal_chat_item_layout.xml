@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqnt.widget.SwipeMenuLayout android:id="@id/chat_swipe_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/recent_list_item_height"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/chat_content" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/diy_msg_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <com.tencent.qqnt.chats.view.widget.DefaultRecentAvatarView android:id="@id/avatar" android:layout_width="@dimen/dp64" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minHeight="@dimen/item_avatar_size" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true">
+                <com.tencent.qqnt.classadapter.SingleLineTextView android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/title" android:paddingRight="16.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:includeFontPadding="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <com.tencent.qqnt.chats.view.RollingTextView android:id="@id/unread" android:background="@drawable/skin_tips_newmessage" android:duplicateParentState="true" android:layout_marginRight="@dimen/recent_item_red_point_margin_right" android:singleLine="false" android:includeFontPadding="true" android:layout_below="@id/title" android:layout_alignParentRight="true" style="@style/CustomNoteTxt" />
+                <com.tencent.qqnt.classadapter.SingleLineTextView android:textSize="@dimen/common_form_subprime_textsize" android:textColor="@color/item_summary_color" android:id="@id/summary" android:paddingRight="10.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:includeFontPadding="true" android:layout_toLeftOf="@id/unread" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/selected_arrow" android:background="@drawable/chat_item_mini_aio_horizonal_arrow" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+    </LinearLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</com.tencent.qqnt.widget.SwipeMenuLayout>

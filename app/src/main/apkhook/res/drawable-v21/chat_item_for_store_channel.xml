@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="48.0dip" android:width="48.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/qui_common_bg_middle_light" />
+            <corners android:radius="8.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="24.0dip" android:width="24.0dip">
+        <vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="72.0" android:viewportHeight="72.0">
+            <path android:pathData="M11,41V60C11,61.657 12.343,63 14,63H58C59.657,63 61,61.657 61,60V41" android:strokeColor="@color/qui_common_text_primary" android:strokeWidth="6.6" />
+            <path android:pathData="M17.769,11C16.005,11 14.373,11.937 13.484,13.461L7.278,21.62C6.918,22.145 6.596,22.697 6.314,23.272L6.24,23.4H6.253C5.45,25.091 5,26.983 5,28.98C5,36.171 10.829,42 18.02,42C21.447,42 24.565,40.676 26.89,38.512C29.305,40.681 32.498,42 36,42C39.502,42 42.695,40.681 45.11,38.512C47.435,40.676 50.553,42 53.98,42C61.171,42 67,36.171 67,28.98C67,26.983 66.55,25.091 65.747,23.4H65.76L65.686,23.272C65.404,22.697 65.082,22.145 64.722,21.62L58.515,13.461C57.627,11.937 55.995,11 54.231,11H17.769Z" android:strokeColor="@color/qui_common_text_primary" android:strokeWidth="6.6" android:strokeLineJoin="round" />
+            <path android:fillColor="@color/qui_common_text_primary" android:pathData="M29,52a7,3 0,1 0,14 0a7,3 0,1 0,-14 0z" />
+        </vector>
+    </item>
+</layer-list>

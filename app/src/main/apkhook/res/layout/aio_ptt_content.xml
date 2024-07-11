@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fake_ptt_voice_change" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="21.0dip" android:layout_marginLeft="19.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptt_voice_layout" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/fake_ptt_voice_change">
+        <ImageView android:id="@id/ptt_play_status" android:paddingRight="4.0dip" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/aio_ptt_play" />
+        <ImageView android:id="@id/ptt_voice_change" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="21.0dip" android:scaleType="centerInside" />
+        <com.tencent.watch.aio_impl.ui.cell.ptt.PttAudioWaveView android:id="@id/ptt_audio_wave_view" android:layout_width="10.0dip" android:layout_height="21.0dip" />
+        <ImageView android:id="@id/ptt_voice_print_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="32.0dip" />
+        <TextView android:textSize="14.0sp" android:id="@id/ptt_duration" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/ptt_unread" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/skin_tips_dot_small" android:layout_alignRight="@id/ptt_voice_layout" />
+    <ImageView android:id="@id/ptt_foreground" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <ViewStub android:id="@id/ptt_view_stub_speech_to_text" android:layout="@layout/aio_ptt_speech_to_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ptt_voice_layout" />
+</merge>

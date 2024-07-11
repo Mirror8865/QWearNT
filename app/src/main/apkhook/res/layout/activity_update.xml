@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/update_root" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView android:name="com.tencent.qqnt.watch.ui.componet.navigation.WatchNavHostFragment" android:id="@id/nav_host_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" />
+</FrameLayout>

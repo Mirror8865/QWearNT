@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/self_nav_inner_graph" app:startDestination="@id/selfEntryFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="SelfEntryFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfEntryFragment" android:id="@id/selfEntryFragment">
+        <action android:id="@id/action_selfEntryFragment_to_selfEditProfileFragment" app:destination="@id/selfEditProfileFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfBindParentFragment" app:destination="@id/selfBindParentFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfClearMsgFragment" app:destination="@id/selfClearMsgFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfCheckUpdateFragment" app:destination="@id/selfCheckUpdateFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfLogoutFragment" app:destination="@id/selfLogoutFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfQrFragment" app:destination="@id/selfQrFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfCloseAccountFragment" app:destination="@id/selfCloseAccountFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_selfEntryFragment_to_selfFeedbackFragment" app:destination="@id/selfFeedbackFragment" app:popUpTo="@id/selfEntryFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="SelfEditProfileFragment" android:name="com.tencent.qqnt.watch.selftab.ui.edit.SelfEditProfileFragment" android:id="@id/selfEditProfileFragment">
+        <action android:id="@id/action_selfEditProfileFragment_to_editAvatarFragment" app:destination="@id/editAvatarFragment" />
+        <action android:id="@id/action_selfEditProfileFragment_to_editNickFragment" app:destination="@id/editNickFragment" />
+    </fragment>
+    <fragment android:label="SelfBindParentFragment" android:name="com.tencent.qqnt.watch.selftab.ui.bind.SelfBindParentFragment" android:id="@id/selfBindParentFragment">
+        <action android:id="@id/action_selfBindParentFragment_to_bindParentCheckFragment" app:destination="@id/bindParentCheckFragment" />
+        <action android:id="@id/action_selfBindParentFragment_to_aioFragment" app:destination="@id/aioFragment" />
+    </fragment>
+    <fragment android:label="SelfClearMsgFragment" android:name="com.tencent.qqnt.watch.selftab.ui.clear.SelfClearMsgFragment" android:id="@id/selfClearMsgFragment" />
+    <fragment android:label="SelfCheckUpdateFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfCheckUpdateFragment" android:id="@id/selfCheckUpdateFragment" />
+    <fragment android:label="SelfCloseAccountFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfCloseAccountFragment" android:id="@id/selfCloseAccountFragment" />
+    <fragment android:label="SelfLogoutFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfLogoutFragment" android:id="@id/selfLogoutFragment" />
+    <fragment android:label="SelfQrFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfQrFragment" android:id="@id/selfQrFragment" />
+    <fragment android:label="EditAvatarFragment" android:name="com.tencent.qqnt.watch.selftab.ui.edit.EditAvatarFragment" android:id="@id/editAvatarFragment" />
+    <fragment android:label="EditNickFragment" android:name="com.tencent.qqnt.watch.selftab.ui.edit.SelfEditNickFragment" android:id="@id/editNickFragment" />
+    <fragment android:label="BindParentCheckFragment" android:name="com.tencent.qqnt.watch.selftab.ui.bind.BindParentCheckFragment" android:id="@id/bindParentCheckFragment" />
+    <fragment android:label="SelfFeedbackFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfFeedbackFragment" android:id="@id/selfFeedbackFragment" />
+    <fragment android:label="WatchAIOFragment" android:name="com.tencent.watch.aio_impl.ui.WatchAIOFragment" android:id="@id/aioFragment" app:launchSingleTop="true">
+        <action android:id="@id/select_fragment_to_add_friend" app:destination="@id/add_friend_nav_graph" />
+        <action android:id="@id/aio_fragment_to_troop_nav" app:destination="@id/troop_nav" />
+        <action android:id="@id/action_aioFragment_to_emotionFragment" app:destination="@id/emotionFragment" />
+        <action android:id="@id/action_aioFragment_to_galleryFragment" app:destination="@id/galleryFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_aio_fragment_to_MediaBrowserFragment" app:destination="@id/mediaBrowserFragment" />
+        <action android:id="@id/action_aioFragment_to_aio_long_press_fragment" app:destination="@id/aio_long_press_fragment" />
+    </fragment>
+</navigation>

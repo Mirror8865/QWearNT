@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mobileqq.activity.fling.TopGestureLayout android:orientation="vertical" android:background="@drawable/bg_blue2white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_audio_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0dip" android:textColor="#99000000" android:gravity="center" android:id="@id/ptt_time_tv" android:layout_width="fill_parent" android:layout_height="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.tencent.qqnt.watch.ptt.ui.AudioVolumeWaveView android:id="@id/audio_volume_wave_view" android:layout_width="117.0dip" android:layout_height="32.0dip" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ptt_time_tv" />
+        <LinearLayout android:gravity="center" android:id="@id/ptt_press_linear" android:background="@drawable/watch_normal_button_blue_bg_20" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_microphone" android:scaleType="fitXY" />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="松手结束" />
+        </LinearLayout>
+        <ImageView android:id="@id/ptt_to_text" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/icon_ptt_to_text" android:layout_marginStart="18.0dip" app:layout_constraintBottom_toTopOf="@id/ptt_press_linear" app:layout_constraintStart_toStartOf="parent" />
+        <ImageView android:id="@id/ptt_delete" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/icon_ptt_delete" android:layout_marginEnd="18.0dip" app:layout_constraintBottom_toTopOf="@id/ptt_press_linear" app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.tencent.mobileqq.activity.fling.TopGestureLayout>

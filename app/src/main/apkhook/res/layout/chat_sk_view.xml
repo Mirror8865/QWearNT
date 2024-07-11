@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/qui_common_fill_light_primary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.qqnt.chats.view.shimmer.ShimmerFrameLayout android:id="@id/shimmer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_base_alpha="1.0" app:shimmer_base_color="#ffffffff" app:shimmer_colored="true" app:shimmer_dropoff="0.2" app:shimmer_duration="1300" app:shimmer_highlight_alpha="1.0" app:shimmer_highlight_color="#408cbaff" app:shimmer_intensity="0.3">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/sk_list_view_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.tencent.qqnt.chats.view.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/sk_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </FrameLayout>
+</LinearLayout>

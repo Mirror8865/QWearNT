@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="line_down_margin_top">37.0dip</dimen>
+    <dimen name="line_up_margin_top">65.0dip</dimen>
+    <dimen name="timepick_day_weight">155.0dip</dimen>
+    <dimen name="timepick_height">168.0dip</dimen>
+    <dimen name="timepick_hour_weight">45.0dip</dimen>
+    <dimen name="timepick_margin_bottom">-2.0dip</dimen>
+    <dimen name="timepick_margin_left">0.0dip</dimen>
+    <dimen name="timepick_margin_top">-2.0dip</dimen>
+    <dimen name="timepick_min_margin_left">15.0dip</dimen>
+    <dimen name="timepick_min_weight">60.0dip</dimen>
+</resources>

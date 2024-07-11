@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqnt.widget.SwipeMenuLayout android:id="@id/chat_swipe_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/recent_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chat_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/diy_msg_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.tencent.qqnt.chats.core.adapter.holder.RecentContactItemRightLayout android:id="@id/right_layout" android:paddingTop="@dimen/dp12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_toRightOf="@id/avatar_container">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/title_left_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" />
+                <com.tencent.qqnt.classadapter.SingleLineTextView android:textSize="17.0sp" android:textColor="@color/qui_common_text_primary" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingRight="16.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:includeFontPadding="true" />
+            </LinearLayout>
+            <com.tencent.qqnt.chats.view.RollingTextView android:id="@id/unread" android:padding="0.0dip" android:duplicateParentState="true" android:layout_marginRight="@dimen/recent_item_red_point_margin_right" android:singleLine="false" android:includeFontPadding="true" android:layout_below="@id/title_layout" android:layout_alignParentRight="true" style="@style/CustomNoteTxt" />
+            <com.tencent.qqnt.chats.view.widget.GuildSummaryLayout android:orientation="horizontal" android:id="@id/summary" android:paddingRight="10.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/dp36" android:layout_marginRight="12.0dip" android:includeFontPadding="true" android:layout_toLeftOf="@id/unread" android:layout_below="@id/title_layout" android:layout_alignLeft="@id/title_layout" />
+        </com.tencent.qqnt.chats.core.adapter.holder.RecentContactItemRightLayout>
+        <RelativeLayout android:id="@id/avatar_container" android:layout_width="@dimen/recent_avatar_container_size" android:layout_height="@dimen/recent_avatar_container_size" android:layout_centerVertical="true" android:layout_marginStart="7.0dip">
+            <FrameLayout android:layout_width="@dimen/item_avatar_wrapper_size" android:layout_height="@dimen/item_avatar_wrapper_size" android:layout_centerInParent="true">
+                <com.tencent.qqnt.chats.view.widget.RoundFrameLayout android:layout_gravity="center" android:id="@id/avatar_shadow_layout" android:background="@color/transparent" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layerType="hardware">
+                <com.tencent.qqnt.chats.view.widget.RecentAvatarViewWrapper android:layout_gravity="center" android:id="@id/avatar_layout" android:focusable="true" android:clickable="true" android:layout_width="@dimen/item_avatar_wrapper_size" android:layout_height="@dimen/item_avatar_wrapper_size" android:importantForAccessibility="no" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</com.tencent.qqnt.widget.SwipeMenuLayout>

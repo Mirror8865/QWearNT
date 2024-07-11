@@ -1,0 +1,54 @@
+version: 2.9.3
+apkFileName: QQNT9.0.1.2340.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 28
+packageInfo:
+  forcedPackageId: 126
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 2340
+  versionName: QWearNT-0.1.0
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  Inject_QQLocationLbsGdtUtilsProcessor.yml: 8
+  Inject_QQLocationLbsInfoReportManagerProcessor.yml: 8
+  Inject_QQTextSpanProcessor.yml: 8
+  androidsupportmultidexversion.txt: 8
+  jacoco-agent.properties: 8
+  com/qq/jce/wup/wup.properties: 8
+doNotCompress:
+- resources.arsc
+- png
+- webp
+- res/raw/qq_aio_record_end.mp3
+- mp3
+- res/raw/ptt_sendover.mp3
+- res/drawable/bg_pink.webp
+- res/raw/qrcode_beep.mp3
+- res/drawable-xhdpi/aio_text_preview_bg.jpg
+- res/raw/qq_aio_record_start.mp3
+- res/drawable-xhdpi/login_type_phone_icon.webp
+- res/drawable/bg_green.webp
+- res/drawable-xxhdpi/qzone_post_voice_pause_ic.webp
+- res/drawable-xhdpi/qq_profilecard_pl_empty.webp
+- res/drawable/icon_alert.webp
+- res/drawable-xhdpi/qzone_zplan_bg_night.jpg
+- res/raw/ptt_startrecord.mp3
+- res/drawable-hdpi/aaa.jpg
+- res/drawable-xhdpi/login_type_qr_icon.webp
+- res/drawable-xxhdpi/aio_impl_icon_telephone_filled.webp
+- res/raw/system.mp3
+- res/drawable-xhdpi/qzone_zplan_bg.jpg
+- res/drawable-xxhdpi/ic_aio_video_play.webp
+- res/drawable-xxhdpi/aio_video_play.webp
+- res/drawable/icon_alert_pink.webp
+- res/drawable-xhdpi/login_type_qq_icon.webp

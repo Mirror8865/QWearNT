@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="rmonitor_app_launch_monitor_activity_before_landing" />
+    <array name="rmonitor_app_launch_monitor_landing_activity" />
+</resources>

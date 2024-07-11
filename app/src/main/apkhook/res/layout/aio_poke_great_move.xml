@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/excute" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/invisible_hand" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/ball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/bluster" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentLeft="true" />
+</merge>

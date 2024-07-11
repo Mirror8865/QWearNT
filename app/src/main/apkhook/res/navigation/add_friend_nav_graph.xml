@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/add_friend_nav_graph" app:startDestination="@id/addFriendEntryFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="QQAddFriendFragment" android:name="com.tencent.qqnt.watch.add.QQAddFriendFragment" android:id="@id/QQAddFriendFragment">
+        <action android:id="@id/action_QQAddFriendFragment_to_friendDetailFragment" app:destination="@id/friendDetailFragment" />
+    </fragment>
+    <fragment android:label="KnockAddFriendFragment" android:name="com.tencent.qqnt.watch.add.ble.KnockAddFriendFragment" android:id="@id/knockAddFriendFragment">
+        <action android:id="@id/action_knockAddFriendFragment_to_friendDetailFragment" app:destination="@id/friendDetailFragment" />
+    </fragment>
+    <fragment android:label="BluetoothCheckFragment" android:name="com.tencent.qqnt.watch.add.ble.BluetoothCheckFragment" android:id="@id/bluetoothCheckFragment">
+        <action android:id="@id/action_bluetoothCheckFragment_to_knockAddFriendFragment" app:destination="@id/knockAddFriendFragment" app:popUpTo="@id/bluetoothCheckFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="AddFriendEntryFragment" android:name="com.tencent.qqnt.watch.add.AddFriendEntryFragment" android:id="@id/addFriendEntryFragment">
+        <action android:id="@id/action_addFriendEntryFragment_to_QQAddFriendFragment" app:destination="@id/QQAddFriendFragment" app:popUpTo="@id/addFriendEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_addFriendEntryFragment_to_deleteFriendFragment" app:destination="@id/deleteFriendFragment" app:popUpTo="@id/addFriendEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_addFriendEntryFragment_to_friendSettingFragment" app:destination="@id/friendSettingFragment" app:popUpTo="@id/addFriendEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_addFriendEntryFragment_to_contactNotifyFragment" app:destination="@id/contactNotifyFragment" app:popUpTo="@id/addFriendEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_addFriendEntryFragment_to_bluetoothCheckFragment" app:destination="@id/bluetoothCheckFragment" app:popUpTo="@id/addFriendEntryFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_addFriendEntryFragment_to_createGroupFragment" app:destination="@id/createGroupFragment" app:popUpTo="@id/addFriendEntryFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="CreateGroupFragment" android:name="com.tencent.qqnt.watch.troop.ui.create.CreateGroupFragment" android:id="@id/createGroupFragment">
+        <action android:id="@id/action_createGroupFragment_to_aioFragment" app:destination="@id/aioFragment" app:popUpTo="@id/createGroupFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="DeleteFriendFragment" android:name="com.tencent.qqnt.watch.delete.DeleteFriendFragment" android:id="@id/deleteFriendFragment" />
+    <fragment android:label="FriendSettingFragment" android:name="com.tencent.qqnt.watch.setting.FriendSettingFragment" android:id="@id/friendSettingFragment">
+        <action android:id="@id/select_fragment_to_add_friend" app:destination="@id/addFriendEntryFragment" />
+    </fragment>
+    <fragment android:label="FriendDetailFragment" android:name="com.tencent.qqnt.watch.add.result.QQSearchResultListFragment" android:id="@id/friendDetailFragment" />
+    <fragment android:label="ContactNotifyFragment" android:name="com.tencent.qqnt.watch.notify.ui.ContactNotifyFragment" android:id="@id/contactNotifyFragment">
+        <action android:id="@id/action_contactNotifyFragment_to_contactNotifyDetailFragment" app:destination="@id/contactNotifyDetailFragment" />
+    </fragment>
+    <fragment android:label="ContactNotifyDetailFragment" android:name="com.tencent.qqnt.watch.notify.ui.ContactNotifyDetailFragment" android:id="@id/contactNotifyDetailFragment">
+        <action android:id="@id/action_contactNotifyDetailFragment_to_aioFragment" app:destination="@id/aioFragment" />
+    </fragment>
+    <fragment android:label="ProfileCardFragment" android:name="com.tencent.qqnt.watch.profile.ui.ProfileCardFragment" android:id="@id/profileCardFragment" />
+    <fragment android:label="WatchAIOFragment" android:name="com.tencent.watch.aio_impl.ui.WatchAIOFragment" android:id="@id/aioFragment" app:launchSingleTop="true">
+        <action android:id="@id/select_fragment_to_add_friend" app:destination="@id/add_friend_nav_graph" />
+        <action android:id="@id/aio_fragment_to_troop_nav" app:destination="@id/troop_nav" />
+        <action android:id="@id/action_aioFragment_to_emotionFragment" app:destination="@id/emotionFragment" />
+        <action android:id="@id/action_aioFragment_to_galleryFragment" app:destination="@id/galleryFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_aio_fragment_to_MediaBrowserFragment" app:destination="@id/mediaBrowserFragment" />
+        <action android:id="@id/action_aioFragment_to_aio_long_press_fragment" app:destination="@id/aio_long_press_fragment" />
+    </fragment>
+</navigation>

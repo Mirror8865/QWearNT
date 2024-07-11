@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/tencent/biz/richframework/widget/BaseWidgetView$ItemPreClickListener;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/biz/richframework/widget/BaseWidgetView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "ItemPreClickListener"
+.end annotation

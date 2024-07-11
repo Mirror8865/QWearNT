@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mobileqq.quibadge.QUIBadgeDragLayout android:id="@id/drag_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/recycler_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlDragRate="0.75" app:srlEnableLoadMore="false" app:srlEnableOverScrollDrag="true" app:srlEnableRefresh="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chat_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</com.tencent.mobileqq.quibadge.QUIBadgeDragLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/form_bg_common_margin" android:right="@dimen/form_bg_common_margin">
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/form_bg_common_margin" android:right="@dimen/form_bg_common_margin" />
+            <solid android:color="@color/qui_common_fill_light_secondary" />
+        </shape>
+    </item>
+    <item android:gravity="top" android:left="@dimen/form_bg_common_margin" android:right="@dimen/form_bg_common_margin">
+        <shape>
+            <size android:height="1.0px" />
+            <solid android:color="@color/qui_common_border_standard" />
+        </shape>
+    </item>
+</layer-list>

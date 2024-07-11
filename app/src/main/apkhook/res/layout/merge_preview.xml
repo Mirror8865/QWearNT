@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preview_img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <com.tencent.qqnt.watch.ui.componet.button.WatchButton android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff1b9af7" android:id="@id/cancel" android:background="@drawable/watch_normal_button_white_bg" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_margin="4.0dip" android:text="@string/re_capture" android:layout_weight="1.0" android:insetLeft="0.0dip" android:insetRight="0.0dip" android:insetTop="0.0dip" android:insetBottom="0.0dip" app:icon="@drawable/icon_camera_blue" app:iconGravity="textStart" app:iconPadding="0.0dip" app:iconSize="16.0dip" />
+        <com.tencent.qqnt.watch.ui.componet.button.WatchButton android:textSize="15.0sp" android:textColor="@color/qui_common_text_allwhite_primary" android:id="@id/confirm" android:background="@drawable/watch_normal_button_blue_bg" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_margin="4.0dip" android:text="@string/confirm" android:layout_weight="1.0" android:insetTop="0.0dip" android:insetBottom="0.0dip" app:icon="@drawable/icon_camera_send" app:iconGravity="textStart" app:iconPadding="0.0dip" app:iconSize="16.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

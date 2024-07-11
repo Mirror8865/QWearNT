@@ -1,0 +1,14 @@
+.class public Lcom/tencent/qqlive/tvkplayer/vinfo/TVKOfflineUrlMgr$SubProcessParameter;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/qqlive/tvkplayer/vinfo/TVKOfflineUrlMgr;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "SubProcessParameter"
+.end annotation

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="account_detail_item_pressed">#1a000000</item>
+    <item type="drawable" name="aio_feed_default">#ffa6a6a6</item>
+    <item type="drawable" name="chatwindow_btn_press">#9936b5e3</item>
+    <item type="drawable" name="dialog_input_choose_list_bg">@color/dialog_input_choose_list_bg_color</item>
+    <item type="drawable" name="dialog_input_choose_list_line">@color/dialog_input_choose_list_line_color</item>
+    <item type="drawable" name="group_pad_template_item_bg_color">#00000000</item>
+    <item type="drawable" name="group_pad_template_item_mask_color">#33969fa9</item>
+    <item type="drawable" name="info_card_cover_default">#ff858991</item>
+    <item type="drawable" name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</item>
+    <item type="drawable" name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</item>
+    <item type="drawable" name="nearpeople_normal">#00000000</item>
+    <item type="drawable" name="nearpeople_pressed">#ff00a5e0</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="option_dilog_item_normal">#ef2a2a2a</item>
+    <item type="drawable" name="option_dilog_item_press">#ff3a3a3a</item>
+    <item type="drawable" name="pressed_forebground">#4d000000</item>
+    <item type="drawable" name="preview_btn_bg_press">#ff000000</item>
+    <item type="drawable" name="qb_active_search_item_normal">#ffffffff</item>
+    <item type="drawable" name="qb_active_search_item_pressed">#ffdedfe0</item>
+    <item type="drawable" name="qwallet_grid_item_pressed">#19000000</item>
+    <item type="drawable" name="readinjoy_comment_item_bg_normal">#ffffffff</item>
+    <item type="drawable" name="readinjoy_comment_item_bg_pressed">#ffe5e5e5</item>
+    <item type="drawable" name="readinjoy_comment_out_sub_comment_bg">#fff7f7f7</item>
+    <item type="drawable" name="readinjoy_expose_reply_comment_bg_normal">#00000000</item>
+    <item type="drawable" name="recent_emo_nothing_line">#ffd6d7d8</item>
+    <item type="drawable" name="sc_trans">@color/color_hei_8</item>
+    <item type="drawable" name="setting_line1">#ffc9c9c9</item>
+    <item type="drawable" name="setting_line2">@color/color_bai</item>
+    <item type="drawable" name="trans">@color/color_hei_8</item>
+    <item type="drawable" name="trans_8">@color/color_hei_trans_8</item>
+    <item type="drawable" name="transparent_2">#00000000</item>
+    <item type="drawable" name="troop_file_common_blue">#ff0079ff</item>
+    <item type="drawable" name="white">@color/white</item>
+</resources>

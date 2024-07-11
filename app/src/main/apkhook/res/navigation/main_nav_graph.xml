@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_nav_graph" app:startDestination="@id/mainFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="MainFragment" android:name="com.tencent.qqnt.watch.mainframe.MainFragment" android:id="@id/mainFragment">
+        <action android:id="@id/action_mainFragment_to_WatchAIOFragment" app:destination="@id/aioFragment" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/anim_nothing" app:popExitAnim="@anim/slide_out_right" />
+        <action android:id="@id/action_mainFragment_to_self_qr_fragment" app:destination="@id/self_qr_fragment" />
+        <action android:id="@id/action_mainFragment_to_selectFragment" app:destination="@id/selectFragment" />
+        <action android:id="@id/main_to_self_entry_fragment" app:destination="@id/self_nav_inner_graph" />
+        <action android:id="@id/select_fragment_to_add_friend" app:destination="@id/add_friend_nav_graph" />
+        <action android:id="@id/aio_fragment_to_troop_nav" app:destination="@id/troop_nav" />
+    </fragment>
+    <fragment android:label="WatchAIOFragment" android:name="com.tencent.watch.aio_impl.ui.WatchAIOFragment" android:id="@id/aioFragment" app:launchSingleTop="true">
+        <action android:id="@id/select_fragment_to_add_friend" app:destination="@id/add_friend_nav_graph" />
+        <action android:id="@id/aio_fragment_to_troop_nav" app:destination="@id/troop_nav" />
+        <action android:id="@id/action_aioFragment_to_emotionFragment" app:destination="@id/emotionFragment" />
+        <action android:id="@id/action_aioFragment_to_galleryFragment" app:destination="@id/galleryFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_aio_fragment_to_MediaBrowserFragment" app:destination="@id/mediaBrowserFragment" />
+        <action android:id="@id/action_aioFragment_to_aio_long_press_fragment" app:destination="@id/aio_long_press_fragment" />
+    </fragment>
+    <fragment android:label="FaceBubbleMaxDialog" android:name="com.tencent.watch.aio_impl.ui.cell.facebubble.sender.FaceBubbleMaxDialog" android:id="@id/face_bubble_max_dialog" />
+    <fragment android:label="AIOLongPressFragment" android:name="com.tencent.watch.aio_impl.ui.menu.AIOLongClickMenuFragment" android:id="@id/aio_long_press_fragment" />
+    <fragment android:label="SelfQrFragment" android:name="com.tencent.qqnt.watch.selftab.ui.SelfQrFragment" android:id="@id/self_qr_fragment" />
+    <fragment android:label="SelectFragment" android:name="com.tencent.qqnt.watch.mainframe.SelectFragment" android:id="@id/selectFragment">
+        <action android:id="@id/select_fragment_to_add_friend" app:destination="@id/add_friend_nav_graph" />
+    </fragment>
+    <fragment android:label="FriendSelectFragment" android:name="com.tencent.qqnt.watch.fs.FriendSelectFragment" android:id="@id/friendSelectFragment" />
+    <include app:graph="@navigation/add_friend_nav_graph" />
+    <include app:graph="@navigation/troop_nav" />
+    <include app:graph="@navigation/self_nav_graph" />
+    <fragment android:label="TipFragment" android:name="com.tencent.qqnt.watch.ui.componet.tips.TipsFragment" android:id="@id/tipsFragment">
+        <deepLink android:id="@id/deepLink" app:uri="tips://tips" />
+    </fragment>
+    <fragment android:label="QzonePublishEntryFragment" android:name="com.tencent.watch.qzone_impl.frame.QzonePublishEntryFragment" android:id="@id/qzonePublishEntryFragment">
+        <action android:id="@id/action_qzoneAlbum_to_qzonePublish" app:destination="@id/qzonePublishFragment" />
+    </fragment>
+    <fragment android:label="QZoneAlbumFragment" android:name="com.tencent.watch.qzone_impl.album.QZoneAlbumFragment" android:id="@id/qzoneAlbumFragment" />
+    <fragment android:label="QZoneAlbumFragment" android:name="com.tencent.watch.qzone_impl.album.QZoneAlbumFragment" android:id="@id/qzoneAlbumFragment" />
+    <fragment android:label="ChooseInputFragment" android:name="com.tencent.watch.ime.input.ChooseInputFragment" android:id="@id/chooseInputFragment" />
+    <fragment android:label="QZonePublishFragment" android:name="com.tencent.watch.qzone_impl.publish.QZonePublishFragment" android:id="@id/qzonePublishFragment" />
+    <fragment android:label="QZoneCheckInFragment" android:name="com.tencent.watch.qzone_impl.checkin.QZoneCheckInFragment" android:id="@id/qzoneCheckinFragment" />
+    <fragment android:label="ReportURLFragment" android:name="com.tencent.qqnt.watch.ReportURLFragment" android:id="@id/reportFragment" />
+    <fragment android:label="PermissionFragment" android:name="com.tencent.qqnt.watch.ui.componet.permission.PermissionRequestFragment" android:id="@id/permissionFragment" />
+    <fragment android:label="VoiceInputFragment" android:name="com.tencent.qqnt.watch.ptt.ui.VoiceInputFragment" android:id="@id/voiceInputFragment" />
+    <fragment android:label="InputMethodFragment" android:name="com.tencent.watch.ime.InputMethodFragment" android:id="@id/InputMethodFragment" />
+    <fragment android:label="ImeEmoFragment" android:name="com.tencent.watch.ime.emo.ImeEmoFragment" android:id="@id/imeEmoFragment" />
+    <fragment android:label="EmotionFragment" android:name="com.tencent.qqnt.watch.emotion.EmotionFragment" android:id="@id/emotionFragment" />
+    <fragment android:label="LoadingFragment" android:name="com.tencent.qqnt.watch.ui.componet.tips.LoadingFragment" android:id="@id/loadingFragment">
+        <deepLink android:id="@id/deepLink" app:uri="tips://tips" />
+    </fragment>
+    <fragment android:label="SimplePicFragment" android:name="com.tencent.qqnt.watch.ui.componet.pic.SimplePicFragment" android:id="@id/simplePicFragment" />
+    <fragment android:label="MediaEntryFragment" android:name="com.tencent.qqnt.watch.gallery.preview.MediaEntryFragment" android:id="@id/mediaEntryFragment" />
+    <fragment android:label="GalleryFragment" android:name="com.tencent.qqnt.watch.gallery.GalleryFragment" android:id="@id/galleryFragment" />
+    <fragment android:name="com.tencent.watch.media_browser_impl.ui.MediaBrowserFragment" android:id="@id/mediaBrowserFragment" />
+    <fragment android:label="CameraFragment" android:name="com.tencent.qqnt.watch.camera.CameraFragment" android:id="@id/cameraFragment" />
+    <fragment android:label="QrFragment" android:name="com.tencent.qqnt.watch.ui.componet.qr.QrFragment" android:id="@id/qrFragment" />
+    <fragment android:label="ZoneMineFragment" android:name="com.tencent.watch.qzone_impl.frame.QZoneMineFragment" android:id="@id/zone_main_fragment" />
+    <fragment android:label="ZoneBrowserFragment" android:name="com.tencent.watch.qzone_impl.frame.QZoneMediaBrowserFragment" android:id="@id/zone_browser_fragment" />
+    <fragment android:label="ProfileCardFragment" android:name="com.tencent.qqnt.watch.profile.ui.ProfileCardFragment" android:id="@id/profileCardFragment" />
+</navigation>

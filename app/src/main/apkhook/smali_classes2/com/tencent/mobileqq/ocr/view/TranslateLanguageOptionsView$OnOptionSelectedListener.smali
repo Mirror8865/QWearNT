@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/tencent/mobileqq/ocr/view/TranslateLanguageOptionsView$OnOptionSelectedListener;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/mobileqq/ocr/view/TranslateLanguageOptionsView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnOptionSelectedListener"
+.end annotation

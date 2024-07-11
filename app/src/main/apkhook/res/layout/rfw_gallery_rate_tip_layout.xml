@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bufferLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/rateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0KB/s" />
+    <TextView android:textSize="14.0dip" android:textColor="#80ffffff" android:id="@id/tipsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在缓冲中，请稍后" android:layout_centerHorizontal="true" />
+</LinearLayout>

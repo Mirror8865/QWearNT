@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/skin_list_item_normal_theme_version2" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginBottom="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include android:id="@id/hotpic_item_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/nt_aio_hotpic_loading" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/skin_color_qq_screen_shot_gray_text" android:id="@id/hotpic_item_nomore" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qqstr_aiohotpi_a4dc6d7e" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>
