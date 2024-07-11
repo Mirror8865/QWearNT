@@ -1,1 +1,0 @@
-adb install hook_signed.apk
